@@ -20,14 +20,17 @@ cd
 # 2. from your home, creating a directory structure: new folder `scpoprogramming`, and inside that folder create folder `hw1`
 # (enter your command below)
 
-mkdir -p /scpoprogramming/hw1
+mkdir scpoprogramming
+cd scpoprogramming
 
 # 3. go into that new directory, i.e. into ~/scpoprogramming/hw1
 # (enter your command below)
 
-cd ~/scpoprogramming/hw1
+mkdir hw1
+cd hw1
 
 # 4. download with wget if file does not exist yet
+curl https://raw.githubusercontent.com/sidooms/MovieTweetings/44c525d0c766944910686c60697203cda39305d6/snapshots/10K/movies.dat -O ./movies.dat
 # if wget does not work for you, manually download from the below URL and place into `~/scpoprogramming/hw1` as `movies.dat`
 # (don't touch)
 if [ ! -f  ~/scpoprogramming/hw1/movies.dat ]; then
